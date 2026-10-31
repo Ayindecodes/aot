@@ -78,6 +78,31 @@ export default function HomePage() {
           className="order-1 aspect-[5/4] rounded-t-[8rem] object-[50%_12%] sm:rounded-t-[12rem] md:order-2 md:aspect-[4/5]"
         />
       </section>
+
+      <section className="bg-white">
+        <div className="section container-page">
+          <h2 className="text-4xl md:text-5xl">Featured Collections</h2>
+          <ul className="mt-8 grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-3 md:gap-x-6">
+            {collections.map((category) => (
+              <li key={category.slug}>
+                <Link href={`/collections/${category.slug}`} className="group block">
+                  {category.image && (
+                    <Photo
+                      src={category.image}
+                      alt={category.name}
+                      className="aspect-[4/5] rounded-t-[6rem] object-top md:rounded-t-[10rem]"
+                    />
+                  )}
+                  <h3 className="mt-3 text-2xl group-hover:text-mocha">{category.name}</h3>
+                  <span className="mt-1 inline-block text-sm text-mocha underline underline-offset-4">
+                    Explore
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
     </>
   );
 }
