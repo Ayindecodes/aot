@@ -91,6 +91,24 @@ const comingSoon: Availability = { kind: "custom", label: "Coming soon", orderab
 
 export const products: Product[] = [
   {
+    slug: "hooded-abaya",
+    name: "Hooded Abaya",
+    category: "abayas",
+    price: 0,
+    description:
+      "A long, loose hooded abaya with a clean, simple line.",
+    images: ["/products/hooded-abaya.webp"],
+    sizing: "custom",
+    colors: [
+      { name: "Taupe", hex: "#bdb3aa", image: "/products/hooded-abaya.webp" },
+      { name: "Rose", hex: "#d795ac", image: "/products/hooded-abaya-rose.webp" },
+      { name: "Sage", hex: "#9dc7a5", image: "/products/hooded-abaya-sage.webp" },
+      { name: "Sky", hex: "#9dc2e0", image: "/products/hooded-abaya-sky.webp" },
+    ],
+    availability: comingSoon,
+    addedOn: "2026-10-07",
+  },
+  {
     slug: "floral-dress",
     name: "Floral Dress",
     category: "modest-dresses",
