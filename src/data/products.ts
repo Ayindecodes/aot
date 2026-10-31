@@ -91,6 +91,25 @@ const comingSoon: Availability = { kind: "custom", label: "Coming soon", orderab
 
 export const products: Product[] = [
   {
+    slug: "sundress",
+    name: "Sundress",
+    category: "modest-dresses",
+    price: 16000,
+    description:
+      "A red and white gingham sundress with a square neckline, short puff sleeves and a full, gathered skirt.",
+    images: ["/products/sundress.webp"],
+    sizing: "custom",
+    colors: [
+      { name: "Red Gingham", hex: "#8c2f45", image: "/products/sundress.webp" },
+      { name: "Navy Gingham", hex: "#34558f", image: "/products/sundress-navy.webp" },
+      { name: "Green Gingham", hex: "#1f8a5e", image: "/products/sundress-green.webp" },
+      { name: "Brown Gingham", hex: "#6f5344", image: "/products/sundress-brown.webp" },
+    ],
+    availability: { kind: "available" },
+    featured: true,
+    addedOn: "2026-10-30",
+  },
+  {
     slug: "two-tone-abaya",
     name: "Two-Tone Abaya",
     category: "abayas",
