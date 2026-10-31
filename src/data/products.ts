@@ -91,6 +91,26 @@ const comingSoon: Availability = { kind: "custom", label: "Coming soon", orderab
 
 export const products: Product[] = [
   {
+    slug: "long-handkerchief-skirt",
+    name: "Long Handkerchief Skirt",
+    category: "modest-skirts",
+    price: 15000,
+    description:
+      "A long handkerchief skirt in a fine striped fabric, with a tiered top layer and a full, flowing hem.",
+    images: ["/products/long-handkerchief-skirt.webp"],
+    sizing: "custom",
+    measurementField: "waist",
+    colors: [
+      { name: "Pink", hex: "#efb4dc", image: "/products/long-handkerchief-skirt.webp" },
+      { name: "Blue", hex: "#a9cdeb", image: "/products/long-handkerchief-skirt-blue.webp" },
+      { name: "Green", hex: "#9fe3bc", image: "/products/long-handkerchief-skirt-green.webp" },
+      { name: "Lilac", hex: "#c9b0ec", image: "/products/long-handkerchief-skirt-lilac.webp" },
+    ],
+    availability: { kind: "available" },
+    featured: true,
+    addedOn: "2026-10-31",
+  },
+  {
     slug: "maxi-satin-skirt",
     name: "Maxi Satin Skirt",
     category: "modest-skirts",
