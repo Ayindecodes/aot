@@ -91,6 +91,24 @@ const comingSoon: Availability = { kind: "custom", label: "Coming soon", orderab
 
 export const products: Product[] = [
   {
+    slug: "bubu-abaya",
+    name: "Bubu Abaya",
+    category: "abayas",
+    price: 15000,
+    description: "A loose, flowing bubu abaya with wide sleeves, shown with a matching hijab.",
+    images: ["/products/bubu-abaya.webp"],
+    sizing: "custom",
+    colors: [
+      { name: "Dusty Pink", hex: "#dcb2c0", image: "/products/bubu-abaya.webp" },
+      { name: "Sage", hex: "#79d0a0", image: "/products/bubu-abaya-sage.webp" },
+      { name: "Blue", hex: "#2a66ad", image: "/products/bubu-abaya-blue.webp" },
+      { name: "Mocha", hex: "#a98468", image: "/products/bubu-abaya-mocha.webp" },
+    ],
+    availability: { kind: "available" },
+    featured: true,
+    addedOn: "2026-10-31",
+  },
+  {
     slug: "two-piece-top-and-skirt",
     name: "Two-Piece Top and Skirt",
     category: "two-piece-sets",
