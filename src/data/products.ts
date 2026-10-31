@@ -91,6 +91,26 @@ const comingSoon: Availability = { kind: "custom", label: "Coming soon", orderab
 
 export const products: Product[] = [
   {
+    slug: "chiffon-top",
+    name: "Chiffon Top",
+    category: "tops",
+    price: 12000,
+    description:
+      "A lime green chiffon top with tiered ruffles, a tie neck, a smocked waist and ruffled bell sleeves.",
+    images: ["/products/chiffon-top.webp"],
+    sizing: "custom",
+    colors: [
+      { name: "Lime", hex: "#c6e82a", image: "/products/chiffon-top.webp" },
+      { name: "Rose", hex: "#c8708f", image: "/products/chiffon-top-rose.webp" },
+      { name: "Teal", hex: "#2f9f96", image: "/products/chiffon-top-teal.webp" },
+      { name: "Lilac", hex: "#9a80d6", image: "/products/chiffon-top-lilac.webp" },
+    ],
+    availability: { kind: "available" },
+    fabric: "Chiffon",
+    featured: true,
+    addedOn: "2026-10-30",
+  },
+  {
     slug: "sundress",
     name: "Sundress",
     category: "modest-dresses",
