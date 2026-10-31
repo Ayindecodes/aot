@@ -103,6 +103,23 @@ export default function HomePage() {
           </ul>
         </div>
       </section>
+
+      <section className="section container-page">
+        <div className="flex items-end justify-between gap-4">
+          <h2 className="text-4xl md:text-5xl">Pieces You&apos;ll Love</h2>
+          <Link
+            href="/shop"
+            className="inline-flex min-h-10 shrink-0 items-center text-sm font-medium text-mocha underline underline-offset-4"
+          >
+            View all
+          </Link>
+        </div>
+        <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-4 lg:gap-x-6">
+          {featured.map((product) => (
+            <ProductCard key={product.slug} product={product} />
+          ))}
+        </div>
+      </section>
     </>
   );
 }
