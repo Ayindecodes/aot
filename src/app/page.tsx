@@ -220,6 +220,28 @@ export default function HomePage() {
           )}
         </p>
       </section>
+
+      <section className="bg-cream">
+        <div className="section container-page text-center">
+          <h2 className="mx-auto max-w-2xl text-4xl md:text-5xl">
+            Your Next Favourite Outfit Starts Here.
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-lg text-muted">
+            Explore modest styles that feel personal, timeless, and unmistakably you.
+          </p>
+          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+            <Link href="/shop" className="btn btn-primary">
+              Shop the Collection
+            </Link>
+            <a
+              href={whatsappLink("Hello AOT.ng, I have a question.")}
+              className="btn btn-secondary"
+            >
+              Chat with Us
+            </a>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
