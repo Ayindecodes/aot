@@ -91,6 +91,24 @@ const comingSoon: Availability = { kind: "custom", label: "Coming soon", orderab
 
 export const products: Product[] = [
   {
+    slug: "floral-dress",
+    name: "Floral Dress",
+    category: "modest-dresses",
+    price: 0,
+    description:
+      "A soft floral dress with contrast sleeves and a matching hijab.",
+    images: ["/products/floral-dress.webp"],
+    sizing: "custom",
+    colors: [
+      { name: "Mocha", hex: "#a5795f", image: "/products/floral-dress.webp" },
+      { name: "Rose", hex: "#b54f7b", image: "/products/floral-dress-rose.webp" },
+      { name: "Sage", hex: "#6fa878", image: "/products/floral-dress-sage.webp" },
+      { name: "Navy", hex: "#38598f", image: "/products/floral-dress-navy.webp" },
+    ],
+    availability: comingSoon,
+    addedOn: "2026-10-06",
+  },
+  {
     slug: "tunic-trouser-set",
     name: "Tunic and Trouser Set",
     category: "two-piece-sets",
