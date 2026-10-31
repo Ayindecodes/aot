@@ -91,6 +91,26 @@ const comingSoon: Availability = { kind: "custom", label: "Coming soon", orderab
 
 export const products: Product[] = [
   {
+    slug: "mesh-gown",
+    name: "Mesh Gown",
+    category: "modest-dresses",
+    price: 18000,
+    description:
+      "A long mesh gown in a soft marbled print, with a ruffled bell sleeve, gathered waist and flowing hem.",
+    images: ["/products/mesh-gown.webp"],
+    sizing: "custom",
+    colors: [
+      { name: "Grey Purple", hex: "#7a6f78", image: "/products/mesh-gown.webp" },
+      { name: "Blue", hex: "#4f7099", image: "/products/mesh-gown-blue.webp" },
+      { name: "Wine", hex: "#8c4a5e", image: "/products/mesh-gown-wine.webp" },
+      { name: "Green", hex: "#3f8069", image: "/products/mesh-gown-green.webp" },
+    ],
+    availability: { kind: "available" },
+    fabric: "Mesh",
+    featured: true,
+    addedOn: "2026-10-31",
+  },
+  {
     slug: "long-handkerchief-skirt",
     name: "Long Handkerchief Skirt",
     category: "modest-skirts",
