@@ -155,6 +155,28 @@ export default function HomePage() {
           />
         </div>
       </section>
+
+      <section className="section container-page grid items-center gap-10 md:grid-cols-2 lg:gap-16">
+        <Photo
+          src="/photos/story.webp"
+          alt="A smiling woman in a black abaya and hijab"
+          className="aspect-[5/4] rounded-b-[10rem] object-[50%_16%] md:order-2"
+        />
+        <div className="md:order-1">
+          <h2 className="text-4xl md:text-5xl">Modesty Is Personal. So Is Style.</h2>
+          <p className="mt-5 text-lg leading-relaxed text-muted">
+            At AOT.ng, we believe that modest fashion should feel as beautiful as it looks. We bring
+            together thoughtful designs, graceful silhouettes, and a love for personal style to
+            create pieces that help every woman express herself with confidence.
+          </p>
+          <Link
+            href="/about"
+            className="mt-4 inline-flex min-h-10 items-center font-medium text-mocha underline underline-offset-4"
+          >
+            Read our story
+          </Link>
+        </div>
+      </section>
     </>
   );
 }
