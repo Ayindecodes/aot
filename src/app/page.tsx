@@ -192,6 +192,34 @@ export default function HomePage() {
           </ul>
         </div>
       </section>
+
+      <section className="section container-page">
+        <h2 className="text-4xl md:text-5xl">Style Inspiration from AOT.ng</h2>
+        <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
+          {inspiration.map((product) => (
+            <Link key={product.slug} href={`/product/${product.slug}`} className="block">
+              <Photo
+                src={product.images[0]}
+                alt={product.name}
+                className="aspect-square rounded-lg object-top"
+              />
+            </Link>
+          ))}
+        </div>
+        <p className="mt-6">
+          Find us on TikTok:{" "}
+          {business.tiktokUrl ? (
+            <a
+              href={business.tiktokUrl}
+              className="font-medium text-mocha underline underline-offset-4"
+            >
+              AOT.ng
+            </a>
+          ) : (
+            <span className="font-medium">AOT.ng</span>
+          )}
+        </p>
+      </section>
     </>
   );
 }
