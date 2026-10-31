@@ -91,6 +91,29 @@ const comingSoon: Availability = { kind: "custom", label: "Coming soon", orderab
 
 export const products: Product[] = [
   {
+    slug: "printed-abaya-set",
+    name: "Printed Abaya Set",
+    category: "abayas",
+    price: 15000,
+    options: [
+      { name: "With scarf and inner", price: 18000 },
+      { name: "With scarf, without inner", price: 15000 },
+    ],
+    description:
+      "A 2-piece printed abaya set in a green and black animal print, with a matching scarf. Choose it with or without the inner.",
+    images: ["/products/printed-abaya-set.webp"],
+    sizing: "custom",
+    colors: [
+      { name: "Mint", hex: "#86d8bb", image: "/products/printed-abaya-set.webp" },
+      { name: "Rose", hex: "#df95b4", image: "/products/printed-abaya-set-rose.webp" },
+      { name: "Lilac", hex: "#a99be6", image: "/products/printed-abaya-set-lilac.webp" },
+      { name: "Gold", hex: "#d9c084", image: "/products/printed-abaya-set-gold.webp" },
+    ],
+    availability: { kind: "available" },
+    featured: true,
+    addedOn: "2026-10-30",
+  },
+  {
     slug: "chiffon-top",
     name: "Chiffon Top",
     category: "tops",
