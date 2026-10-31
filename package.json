@@ -1,0 +1,33 @@
+{
+  "name": "aot",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "preview": "next build && wrangler dev --port 8799",
+    "deploy": "next build && wrangler deploy",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit && tsc -p worker",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "lucide-react": "^1.65.0",
+    "next": "16.4.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261030.1",
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.3",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "^5.0.5",
+    "wrangler": "^4.156.0"
+  }
+}
