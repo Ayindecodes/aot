@@ -120,6 +120,41 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      <section className="bg-espresso text-ivory">
+        <div className="section container-page grid items-center gap-10 md:grid-cols-2 lg:gap-16">
+          <div>
+            <h2 className="text-4xl md:text-5xl">Made for You. Designed Your Way.</h2>
+            <p className="mt-5 text-lg leading-relaxed">
+              Have a design in mind? Let AOT.ng bring your vision to life with custom-made modest
+              pieces tailored to your preferences.
+            </p>
+            <p className="mt-4 leading-relaxed text-cream">
+              Tell us about your preferred designs, fabrics, colours, measurements, and finishing
+              details, and we&apos;ll talk it through with you.
+            </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a
+                href={customOutfitLink}
+                className="btn bg-ivory text-espresso hover:bg-cream"
+              >
+                Request a Custom Outfit
+              </a>
+              <Link
+                href="/custom-sewing"
+                className="btn border border-ivory text-ivory hover:bg-ivory hover:text-espresso"
+              >
+                How It Works
+              </Link>
+            </div>
+          </div>
+          <Photo
+            src="/photos/custom-home.webp"
+            alt="A tape measure and scissors on satin"
+            className="aspect-[5/4] rounded-lg"
+          />
+        </div>
+      </section>
     </>
   );
 }
