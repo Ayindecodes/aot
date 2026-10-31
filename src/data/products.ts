@@ -91,6 +91,26 @@ const comingSoon: Availability = { kind: "custom", label: "Coming soon", orderab
 
 export const products: Product[] = [
   {
+    slug: "maxi-satin-skirt",
+    name: "Maxi Satin Skirt",
+    category: "modest-skirts",
+    price: 7000,
+    description: "A long, fitted maxi skirt with a soft sheen that flares gently at the hem.",
+    images: ["/products/maxi-satin-skirt.webp"],
+    sizing: "custom",
+    measurementField: "waist",
+    colors: [
+      { name: "Bronze", hex: "#7a5222", image: "/products/maxi-satin-skirt.webp" },
+      { name: "Wine", hex: "#5a1f30", image: "/products/maxi-satin-skirt-wine.webp" },
+      { name: "Green", hex: "#14583f", image: "/products/maxi-satin-skirt-green.webp" },
+      { name: "Navy", hex: "#1d3461", image: "/products/maxi-satin-skirt-navy.webp" },
+    ],
+    availability: { kind: "available" },
+    fabric: "Satin or silk",
+    featured: true,
+    addedOn: "2026-10-31",
+  },
+  {
     slug: "bubu-abaya",
     name: "Bubu Abaya",
     category: "abayas",
