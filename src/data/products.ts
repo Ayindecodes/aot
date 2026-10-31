@@ -91,6 +91,24 @@ const comingSoon: Availability = { kind: "custom", label: "Coming soon", orderab
 
 export const products: Product[] = [
   {
+    slug: "tunic-trouser-set",
+    name: "Tunic and Trouser Set",
+    category: "two-piece-sets",
+    price: 0,
+    description:
+      "A relaxed tunic and trousers, finished with a matching scarf.",
+    images: ["/products/tunic-trouser-set.webp"],
+    sizing: "custom",
+    colors: [
+      { name: "Beige", hex: "#c7b08f", image: "/products/tunic-trouser-set.webp" },
+      { name: "Olive", hex: "#7f8a55", image: "/products/tunic-trouser-set-olive.webp" },
+      { name: "Rose", hex: "#b77589", image: "/products/tunic-trouser-set-rose.webp" },
+      { name: "Slate", hex: "#5f7a96", image: "/products/tunic-trouser-set-slate.webp" },
+    ],
+    availability: comingSoon,
+    addedOn: "2026-10-05",
+  },
+  {
     slug: "custom-gown",
     name: "Custom Gown",
     category: "custom-outfits",
