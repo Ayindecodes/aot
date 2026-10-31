@@ -1,0 +1,11 @@
+# Copy to .dev.vars for local testing with `npm run preview`.
+# Production uses secrets instead, set with `npx wrangler secret put`. See the README.
+
+# Prints order emails to the terminal instead of sending them.
+ORDER_EMAIL_MODE=log
+
+# Where new order alerts go. Production keeps this as a secret, because this repo is public.
+ORDER_ALERT_EMAIL=owner@example.com
+
+# Signs the update links in the owner's order emails. Production has its own secret.
+ORDER_ACTION_SECRET=local-development-only
