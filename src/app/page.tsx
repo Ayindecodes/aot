@@ -177,6 +177,21 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
+
+      <section className="bg-cream">
+        <div className="section container-page">
+          <h2 className="text-4xl md:text-5xl">Why Choose AOT.ng?</h2>
+          <ul className="mt-10 grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            {highlights.map(({ icon: Icon, title, text }) => (
+              <li key={title}>
+                <Icon size={26} strokeWidth={1.25} className="text-mocha" aria-hidden="true" />
+                <h3 className="mt-3 text-xl">{title}</h3>
+                <p className="mt-1 text-sm leading-relaxed text-muted">{text}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
     </>
   );
 }
