@@ -91,6 +91,24 @@ const comingSoon: Availability = { kind: "custom", label: "Coming soon", orderab
 
 export const products: Product[] = [
   {
+    slug: "two-tone-abaya",
+    name: "Two-Tone Abaya",
+    category: "abayas",
+    price: 0,
+    description:
+      "A long open abaya with a soft blush front panel, worn with a matching hijab.",
+    images: ["/products/two-tone-abaya.webp"],
+    sizing: "custom",
+    colors: [
+      { name: "Black", hex: "#1c1a1a", image: "/products/two-tone-abaya.webp" },
+      { name: "Navy", hex: "#1f3a6b", image: "/products/two-tone-abaya-navy.webp" },
+      { name: "Wine", hex: "#6b1f35", image: "/products/two-tone-abaya-wine.webp" },
+      { name: "Green", hex: "#155a3f", image: "/products/two-tone-abaya-green.webp" },
+    ],
+    availability: comingSoon,
+    addedOn: "2026-10-08",
+  },
+  {
     slug: "hooded-abaya",
     name: "Hooded Abaya",
     category: "abayas",
