@@ -91,6 +91,25 @@ const comingSoon: Availability = { kind: "custom", label: "Coming soon", orderab
 
 export const products: Product[] = [
   {
+    slug: "two-piece-top-and-skirt",
+    name: "Two-Piece Top and Skirt",
+    category: "two-piece-sets",
+    price: 20000,
+    description: "A two-piece set with a printed long-sleeved top and a long, flowing white skirt.",
+    images: ["/products/two-piece-top-and-skirt.webp"],
+    sizing: "custom",
+    colors: [
+      { name: "As pictured", hex: "#d9dcec" },
+      { name: "Black", hex: "#1c1a1a" },
+      { name: "Navy", hex: "#1f3a6b" },
+      { name: "Wine", hex: "#6b1f35" },
+      { name: "Green", hex: "#155a3f" },
+    ],
+    availability: { kind: "available" },
+    featured: true,
+    addedOn: "2026-10-31",
+  },
+  {
     slug: "naqsh-top",
     name: "Naqsh Top",
     category: "tops",
