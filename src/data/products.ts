@@ -91,6 +91,25 @@ const comingSoon: Availability = { kind: "custom", label: "Coming soon", orderab
 
 export const products: Product[] = [
   {
+    slug: "naqsh-top",
+    name: "Naqsh Top",
+    category: "tops",
+    price: 10000,
+    description:
+      "A long-sleeved sheer top in a leopard print, with a ruffled hem that falls longer at the sides.",
+    images: ["/products/naqsh-top.webp"],
+    sizing: "custom",
+    colors: [
+      { name: "Grey Leopard", hex: "#6f6a68", image: "/products/naqsh-top.webp" },
+      { name: "Brown Leopard", hex: "#8a5a2c", image: "/products/naqsh-top-brown.webp" },
+      { name: "Wine Leopard", hex: "#a0264f", image: "/products/naqsh-top-wine.webp" },
+      { name: "Blue Leopard", hex: "#2f5fa8", image: "/products/naqsh-top-navy.webp" },
+    ],
+    availability: { kind: "available" },
+    featured: true,
+    addedOn: "2026-10-31",
+  },
+  {
     slug: "handkerchief-skirt",
     name: "Handkerchief Skirt",
     category: "modest-skirts",
