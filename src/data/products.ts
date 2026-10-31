@@ -91,6 +91,26 @@ const comingSoon: Availability = { kind: "custom", label: "Coming soon", orderab
 
 export const products: Product[] = [
   {
+    slug: "handkerchief-skirt",
+    name: "Handkerchief Skirt",
+    category: "modest-skirts",
+    price: 15000,
+    description:
+      "A handkerchief skirt in a dark red and green plaid, with a tied waist and a flowing, uneven hem.",
+    images: ["/products/handkerchief-skirt.webp"],
+    sizing: "custom",
+    measurementField: "waist",
+    colors: [
+      { name: "Red Plaid", hex: "#7a2e3a", image: "/products/handkerchief-skirt.webp" },
+      { name: "Navy Plaid", hex: "#2f4372", image: "/products/handkerchief-skirt-navy.webp" },
+      { name: "Green Plaid", hex: "#1f6b52", image: "/products/handkerchief-skirt-green.webp" },
+      { name: "Brown Plaid", hex: "#5e4634", image: "/products/handkerchief-skirt-brown.webp" },
+    ],
+    availability: { kind: "available" },
+    featured: true,
+    addedOn: "2026-10-30",
+  },
+  {
     slug: "printed-abaya-set",
     name: "Printed Abaya Set",
     category: "abayas",
