@@ -90,6 +90,24 @@ export const categories: Category[] = [
 const comingSoon: Availability = { kind: "custom", label: "Coming soon", orderable: false };
 
 export const products: Product[] = [
+  {
+    slug: "custom-gown",
+    name: "Custom Gown",
+    category: "custom-outfits",
+    price: 0,
+    description:
+      "A full-length lace gown with long sheer sleeves and a flowing skirt.",
+    images: ["/products/custom-gown.webp"],
+    sizing: "custom",
+    colors: [
+      { name: "Plum", hex: "#5c2455", image: "/products/custom-gown.webp" },
+      { name: "Green", hex: "#155a3f", image: "/products/custom-gown-green.webp" },
+      { name: "Navy", hex: "#1f3a6b", image: "/products/custom-gown-navy.webp" },
+      { name: "Wine", hex: "#6b1f2c", image: "/products/custom-gown-wine.webp" },
+    ],
+    availability: comingSoon,
+    addedOn: "2026-10-01",
+  },
 ];
 
 export function getProduct(slug: string): Product | undefined {
