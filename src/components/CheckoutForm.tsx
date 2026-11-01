@@ -215,13 +215,11 @@ export function CheckoutForm() {
           />
         </section>
 
-        {business.turnstileSiteKey && (
-          <BotCheck
-            key={botCheckAttempt}
-            onToken={setBotToken}
-            onError={() => setSendFailed(true)}
-          />
-        )}
+        <BotCheck
+          key={botCheckAttempt}
+          onToken={setBotToken}
+          onError={() => setSendFailed(true)}
+        />
 
         <ErrorList errors={errors} />
 
@@ -240,7 +238,7 @@ export function CheckoutForm() {
           <button
             type="button"
             onClick={submitOrder}
-            disabled={submitting || (Boolean(business.turnstileSiteKey) && !botToken)}
+            disabled={submitting || !botToken}
             className="btn btn-primary"
           >
             {submitting ? "Submitting..." : "Submit Order"}
