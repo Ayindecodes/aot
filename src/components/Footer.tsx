@@ -70,9 +70,20 @@ export function Footer() {
         <LinkColumn title="Policies" links={policyLinks} />
       </div>
       <div className="border-t border-mocha">
-        <p className="container-page py-4 text-sm text-taupe">
-          © {new Date().getFullYear()} {business.name}. Ilorin, Kwara State, Nigeria.
-        </p>
+        <div className="container-page flex flex-wrap items-center justify-between gap-x-6 py-2 text-sm text-taupe">
+          <p className="py-2">
+            © {new Date().getFullYear()} {business.name}
+          </p>
+          <p>
+            Built by{" "}
+            <a
+              href="mailto:techblazecodes@gmail.com"
+              className="inline-flex min-h-10 items-center text-ivory underline underline-offset-4"
+            >
+              techblazecodes
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
