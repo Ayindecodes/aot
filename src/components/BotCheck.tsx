@@ -42,7 +42,10 @@ export function BotCheck({
       sitekey: business.turnstileSiteKey,
       size: "flexible",
       theme: "light",
-      callback: onToken,
+      callback: (token) => {
+        setFailed(false);
+        onToken(token);
+      },
       "expired-callback": () => onToken(""),
       "error-callback": () => {
         setFailed(true);
