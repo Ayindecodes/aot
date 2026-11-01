@@ -16,7 +16,9 @@
     "run_worker_first": ["/api/*"]
   },
   "vars": {
-    "BOT_CHECK_OFF": "true",
+    "GITHUB_REPO": "Ayindecodes/aot",
+    "GITHUB_AUTHOR_NAME": "Ayinde",
+    "GITHUB_AUTHOR_EMAIL": "ayindegraphicscreation@gmail.com",
     "ORDER_FROM_EMAIL": "AOT.ng Orders <orders@aotwears.store>"
   }
 }
