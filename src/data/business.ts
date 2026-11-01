@@ -14,7 +14,7 @@ export const business = {
     accountName: "Ojikutu Amina Sijuola",
   },
   // Public key for the checkout bot check. Its secret is a Worker secret.
-  turnstileSiteKey: "",
+  turnstileSiteKey: "0x4AAAAAAFvVB21Q-dsGj3EU",
   // Set this to the full TikTok profile URL once it is confirmed.
   tiktokUrl: null as string | null,
 };
