@@ -12,13 +12,11 @@ The buttons carry the order details in a signed link, so nothing is stored. `ORD
 
 ## Updating products
 
-Everything lives in `src/data/products.ts`, with the options explained at the top of the file.
+Log in at `/admin` to add, edit or remove products. Saving commits `src/data/catalog.json` and any photos to GitHub, and that push runs `.github/workflows/deploy.yml`, which tests, builds and deploys the site in about 3 minutes.
 
-- **Price:** change `price`. To show a sale, set `compareAtPrice` to the old price.
-- **Stock:** change `availability`. For limited pieces, lower `remaining` after each confirmed order.
-- **Photos:** put files in `public/products/` and list them in `images`, such as `"/products/abaya-1.jpg"`. Resize them first, because the site serves them as they are.
+The Worker reads the same catalogue, so a customer can't order at an old price or buy something marked sold out. The field options are explained at the top of `src/data/products.ts`.
 
-Run `npm run deploy` to publish. The Worker reads the same file, so a customer can't order at an old price or buy something marked sold out.
+The admin needs these Worker secrets: `ADMIN_PASSWORD`, `ADMIN_SESSION_SECRET` and `GITHUB_TOKEN`, a fine-grained token limited to this repo with read and write access to contents. The deploy workflow needs `CLOUDFLARE_API_TOKEN` as a GitHub Actions secret.
 
 Business details such as the bank account, phone number and delivery fees are in `src/data/business.ts`.
 
@@ -38,6 +36,8 @@ cp .dev.vars.example .dev.vars
 npm run preview      # site and order Worker, with emails printed to the terminal
 npm run dev          # site only, so orders won't submit
 ```
+
+The bot check only works on aotwears.store, so checkout can't be submitted locally.
 
 ## Checks
 
