@@ -5,6 +5,7 @@
     "types": ["@cloudflare/workers-types", "node"],
     "module": "esnext",
     "moduleResolution": "bundler",
+    "resolveJsonModule": true,
     "strict": true,
     "noEmit": true,
     "skipLibCheck": true,
