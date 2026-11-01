@@ -1,5 +1,6 @@
 import { MAX_RECEIPT_BYTES, priceOrder } from "../src/lib/order";
 import { sendOrderEmail, sendReceivedEmail, type EmailEnv } from "./email";
+import { handleAdmin, type AdminEnv } from "./admin";
 import { createUpdateLinks, handleOrderUpdate } from "./updates";
 
 const MAX_BODY_BYTES = MAX_RECEIPT_BYTES + 256 * 1024;
@@ -8,9 +9,8 @@ const ORDER_NUMBER_ALPHABET = "23456789ABCDEFGHJKLMNPQRSTUVWXYZ";
 
 const TURNSTILE_URL = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
 
-export interface Env extends EmailEnv {
+export interface Env extends EmailEnv, AdminEnv {
   ASSETS: { fetch: typeof fetch };
-  BOT_CHECK_OFF?: string;
   TURNSTILE_SECRET_KEY?: string;
 }
 
@@ -50,7 +50,7 @@ export function createOrderNumber(now = new Date()): string {
 
 // Orders email whatever address they're given, so bots must be stopped before that can happen.
 async function passesBotCheck(request: Request, env: Env, token: string): Promise<boolean> {
-  if (env.ORDER_EMAIL_MODE === "log" || env.BOT_CHECK_OFF === "true") return true;
+  if (env.ORDER_EMAIL_MODE === "log") return true;
   if (!env.TURNSTILE_SECRET_KEY || !token) return false;
 
   const response = await fetch(TURNSTILE_URL, {
@@ -153,6 +153,9 @@ const handler = {
     const { pathname } = new URL(request.url);
     if (pathname === "/api/order") return handleOrder(request, env);
     if (pathname === "/api/order-update") return handleOrderUpdate(request, env);
+    if (pathname.startsWith("/api/admin/")) {
+      return handleAdmin(request, env, (req, token) => passesBotCheck(req, env, token));
+    }
     return env.ASSETS.fetch(request);
   },
 };
