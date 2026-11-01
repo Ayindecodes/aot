@@ -9,3 +9,7 @@ ORDER_ALERT_EMAIL=owner@example.com
 
 # Signs the update links in the owner's order emails. Production has its own secret.
 ORDER_ACTION_SECRET=local-development-only
+
+# Lets the admin run locally. Production has its own secrets.
+ADMIN_PASSWORD=local-development-only
+ADMIN_SESSION_SECRET=local-development-only
