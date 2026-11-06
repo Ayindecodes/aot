@@ -2,8 +2,8 @@ export const business = {
   name: "AOT.ng",
   tagline: "Modest. Elegant.You",
   siteUrl: "https://aotwears.store",
-  // Set this to true at launch, so search engines can list the site.
-  openToSearchEngines: false,
+  // Lets search engines list the site. Set to false to hide it again.
+  openToSearchEngines: true,
   phoneDisplay: "09027500239",
   phoneTel: "+2349027500239",
   whatsappNumber: "2349027500239",
